@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Libertinus+Mono&family=Lora:ital,wght@0,400..700;1,400..700&family=Nixie+One&family=Noto+Sans+Mono:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'lora', monospace;
+    background-color: #fef9f2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.panel-container{
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+
+}
+.panel-container strong {
+    line-height: 20px;
+}
+
+.rating-container {
+    display : flex ;
+    margin: 20px 0 ;
+}
+
+.rating {
+    flex: 1;
+    margin: 10px 5px;
+    padding: 20px;
+    font-size: 1.5em; 
+    cursor: pointer;
+}
+
+.rating:hover ,
+.rating:active {
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.1);
+
+}
+
+.rating img {
+    width: 40px;
+}
+
+.rating small {
+    color: #555;
+    display : inline-block ;
+    margin:  10px 0 0 ;
+    font-size: 15px; 
+}
+
+.rating:hover small,
+.rating:active small {
+  color: #111;
+}
+
+.btn {
+    background-color: #302d2b;
+    color:  white ;
+    border: 0;
+    border-radius: 4px; 
+    padding: 10px 30px;
+    cursor: pointer;
+
+}
+
+.btn:focus {
+    outline: 0;   
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.fa-heart {
+    color: red;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.rating.active {
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ظل أقوى من hover */
+}
+
